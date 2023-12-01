@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador Numérico</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Nova+Square&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Verificador Numérico</h1>
+      <div class="form-methods">
+        <h5>
+          Para que o formulário seja válido, o campo B precisa ser maior que o
+          campo A.
+        </h5>
+        <form class="flex-form">
+          <input id="campo-a" type="number" placeholder="Campo A" required />
+          <input id="campo-b" type="number" placeholder="Campo B" required />
+          <button id="btn-form" type="submit">Enviar</button>
+        </form>
+        <div class="user-message">
+          <p class="valido"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
