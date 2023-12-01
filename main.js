@@ -6,10 +6,17 @@ const labelSuccess = document.querySelector(".valido");
 function nomeFuncao(e) {
   e.preventDefault();
 
-  if (campoB.value > campoA.value) {
-    labelSuccess.innerHTML = "Válido! B é maior que A.";
+  const valorA = parseFloat(campoA.value);
+  const valorB = parseFloat(campoB.value);
+
+  if (!isNaN(valorA) && !isNaN(valorB)) {
+    if (valorB > valorA) {
+      labelSuccess.innerHTML = "Válido! B é maior que A.";
+    } else {
+      labelSuccess.innerHTML = "Inválido! A é maior que B.";
+    }
   } else {
-    labelSuccess.innerHTML = "Inváido! A é maior que B";
+    labelSuccess.innerHTML = "Por favor, insira valores numéricos válidos.";
   }
 }
 

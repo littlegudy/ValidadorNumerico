@@ -57,3 +57,9 @@ h5 {
 .flex-form button:hover {
     cursor: pointer;
 }
+
+
+.valido {
+    text-align: center;
+    margin-top: 30px;
+}
